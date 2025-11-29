@@ -12,12 +12,72 @@
     <header
       class="flex justify-between items-center px-8 h-24 max-w-7xl mx-auto lg:h-32"
     >
+      <!-- logo -->
       <div class="cursor-pointer">
         <img src="images/logo.svg" alt="logo" />
       </div>
-      <div class="cursor-pointer">
-        <img src="images/icon-menu.svg" alt="icon menu" />
+      <!-- buttons -->
+      <button id="menu-btn" class="cursor-pointer relative z-50 md:hidden">
+        <img
+          id="icon-hamburger"
+          class="block"
+          src="images/icon-menu.svg"
+          alt="icon menu"
+        />
+        <img
+          id="icon-close"
+          class="hidden"
+          src="images/icon-menu-close.svg"
+          alt="icon menu"
+        />
+      </button>
+      <!-- mobile menu -->
+      <div id="mobile-menu" class="inset-0 z-40 bg-black/50 fixed hidden">
+        <nav
+          class="absolute right-0 top-0 w-3/4 h-screen bg-white pl-8 pt-9 shadow-lg md:hidden"
+        >
+          <ul
+            class="absolute top-1/4 flex flex-col gap-8 text-2xl font-light text-slate-700"
+          >
+            <li class="hover:text-[#f15d51] transition-all duration-300">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-[#f15d51] transition-all duration-300">
+              <a href="#">New</a>
+            </li>
+            <li class="hover:text-[#f15d51] transition-all duration-300">
+              <a href="#">Popular</a>
+            </li>
+            <li class="hover:text-[#f15d51] transition-all duration-300">
+              <a href="#">Trending</a>
+            </li>
+            <li class="hover:text-[#f15d51] transition-all duration-300">
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+      <!-- desktop menu -->
+      <nav class="hidden md:block">
+        <ul class="text-lg font-light text-slate-500 flex gap-4">
+          <li class="hover:text-[#f15d51] transition-all duration-300">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-[#f15d51] transition-all duration-300">
+            <a href="#">New</a>
+          </li>
+          <li class="hover:text-[#f15d51] transition-all duration-300">
+            <a href="#">Popular</a>
+          </li>
+          <li class="hover:text-[#f15d51] transition-all duration-300">
+            <a href="#">Trending</a>
+          </li>
+          <li class="hover:text-[#f15d51] transition-all duration-300">
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+      </nav>
+      <!--  -->
     </header>
 
     <!-- CONTENT -->
@@ -163,3 +223,25 @@
     </div>
   </body>
 </html>
+
+<script>
+  // variables
+  const $btnMenu = document.getElementById('menu-btn');
+  const $iconHamburger = document.getElementById('icon-hamburger');
+  const $iconClose = document.getElementById('icon-close');
+  const $mobileMenu = document.getElementById('mobile-menu');
+
+  $btnMenu.addEventListener('click', () => {
+    // show menu
+    $mobileMenu.classList.toggle('hidden');
+
+    // change icons
+    $iconHamburger.classList.toggle('hidden');
+    $iconClose.classList.toggle('hidden');
+
+    // prevent scrolling on the body when menu is open
+    document.body.classList.toggle('overflow-hidden');
+  });
+</script>
+
+menu-btn icon-hamburger icon-close mobile-menu
