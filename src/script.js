@@ -6,7 +6,9 @@ const $mobileMenu = document.getElementById('mobile-menu');
 
 $btnMenu.addEventListener('click', () => {
   // show menu
-  $mobileMenu.classList.toggle('hidden');
+  $mobileMenu.classList.toggle('opacity-0');
+  $mobileMenu.classList.toggle('invisible');
+  $mobileMenu.classList.toggle('pointer-events-none');
 
   // change icons
   $iconHamburger.classList.toggle('hidden');
@@ -18,11 +20,14 @@ $btnMenu.addEventListener('click', () => {
 
 $mobileMenu.addEventListener('click', () => {
   // show menu
-  $mobileMenu.classList.toggle('hidden');
+  $mobileMenu.classList.toggle('opacity-0');
+  $mobileMenu.classList.toggle('invisible');
+  $mobileMenu.classList.toggle('pointer-events-none');
 
   // change icons
   $iconHamburger.classList.toggle('hidden');
   $iconClose.classList.toggle('hidden');
+
   // prevent scrolling on the body when menu is open
   document.body.classList.toggle('overflow-hidden');
 });
