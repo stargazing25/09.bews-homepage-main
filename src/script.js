@@ -15,3 +15,14 @@ $btnMenu.addEventListener('click', () => {
   // prevent scrolling on the body when menu is open
   document.body.classList.toggle('overflow-hidden');
 });
+
+$mobileMenu.addEventListener('click', () => {
+  // show menu
+  $mobileMenu.classList.toggle('hidden');
+
+  // change icons
+  $iconHamburger.classList.toggle('hidden');
+  $iconClose.classList.toggle('hidden');
+  // prevent scrolling on the body when menu is open
+  document.body.classList.toggle('overflow-hidden');
+});
