@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>News Home Page</title>
+  </head>
+  <body class="font-inter bg-slate-100">
+    <!-- HEADER -->
+    <header class="flex justify-between items-center px-8 h-24">
+      <div>
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <div class="cursor-pointer">
+        <img src="images/icon-menu.svg" alt="icon menu" />
+      </div>
+    </header>
+    <div class="px-8 grid grid-cols-1">
+      <!-- FIRST IMAGE -->
+      <div
+        class="bg-[url(/images/image-web-3-mobile.jpg)] bg-cover bg-top w-full h-96 mb-12"
+      ></div>
+      <!-- DESCRIPTION -->
+      <main class="mb-20">
+        <h2 class="text-5xl mb-6 tracking-tight">
+          The Bright Future of Web 3.0?
+        </h2>
+        <div>
+          <p class="text-slate-500 text-base/8 font-normal mb-6">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button
+            class="bg-[#f15d51] uppercase px-9 py-4 tracking-widest cursor-pointer hover:bg-slate-950 hover:text-white transition-all duration-300 active:bg-slate-800 active:text-white"
+          >
+            Read more
+          </button>
+        </div>
+      </main>
+
+      <!-- LIST OF NEWS -->
+      <aside class="text-white bg-slate-950 p-6 mb-20">
+        <h2 class="text-yellow-400 text-5xl mb-6">New</h2>
+        <article class="mb-8 border-b border-gray-400">
+          <a href="#" class="hover:text-yellow-400 transition-all duration-300">
+            <h3 class="text-2xl">Hydrogen VS Electric Cars</h3>
+          </a>
+          <p class="font-lighter text-gray-400 mb-8">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <article class="mb-8 border-b border-gray-400">
+          <a href="#" class="hover:text-yellow-400 transition-all duration-300">
+            <h3 class="text-2xl">The Downsides of AI Artistry</h3>
+          </a>
+          <p class="font-lighter text-gray-400 mb-8">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="border-gray-400">
+          <a href="#" class="hover:text-yellow-400 transition-all duration-300">
+            <h3 class="text-2xl">Is VC Funding Drying Up?</h3>
+          </a>
+          <p class="font-lighter text-gray-400">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </aside>
+
+      <!-- ARTICLES -->
+      <section class="mb-20">
+        <ol>
+          <!-- ARTICLE 1 -->
+          <li class="mb-10">
+            <article class="grid grid-cols-[10rem_1fr] gap-6">
+              <div class="w-full h-auto">
+                <img src="/images/image-retro-pcs.jpg" alt="retro pcs" />
+              </div>
+              <div class="flex flex-col">
+                <span class="text-4xl text-[#f15d51] font-semibold mb-2"
+                  >01</span
+                >
+                <a
+                  href="#"
+                  class="hover:text-[#f15d51] transition-all duration-300"
+                >
+                  <h3 class="text-xl mb-2 font-semibold">Reviving Retro PCs</h3>
+                </a>
+                <p class="text-base/7 text-slate-500">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- ARTICLE 2 -->
+          <li class="mb-10">
+            <article class="grid grid-cols-[10rem_1fr] gap-6">
+              <div class="w-full h-auto">
+                <img src="/images/image-top-laptops.jpg" alt="top Laptops" />
+              </div>
+              <div class="flex flex-col">
+                <span class="text-4xl text-[#f15d51] font-semibold mb-2"
+                  >02</span
+                >
+                <a
+                  href="#"
+                  class="hover:text-[#f15d51] transition-all duration-300"
+                >
+                  <h3 class="text-xl mb-2 font-semibold">
+                    Top 10 Laptops of 2022
+                  </h3>
+                </a>
+                <p class="text-base/7 text-slate-500">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- ARTICLE 3 -->
+          <li>
+            <article class="grid grid-cols-[10rem_1fr] gap-6">
+              <div class="w-full h-auto">
+                <img
+                  src="/images/image-gaming-growth.jpg"
+                  alt="gaming growth"
+                />
+              </div>
+              <div class="flex flex-col">
+                <span class="text-4xl text-[#f15d51] font-semibold mb-2"
+                  >03</span
+                >
+                <a
+                  href="#"
+                  class="hover:text-[#f15d51] transition-all duration-300"
+                >
+                  <h3 class="text-xl mb-2 font-semibold">
+                    The Growth of Gaming
+                  </h3>
+                </a>
+                <p class="text-base/7 text-slate-500">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </body>
+</html>
