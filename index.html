@@ -9,46 +9,56 @@
   </head>
   <body class="font-inter bg-slate-100">
     <!-- HEADER -->
-    <header class="flex justify-between items-center px-8 h-24">
-      <div>
+    <header
+      class="flex justify-between items-center px-8 h-24 max-w-7xl mx-auto lg:h-32"
+    >
+      <div class="cursor-pointer">
         <img src="images/logo.svg" alt="logo" />
       </div>
       <div class="cursor-pointer">
         <img src="images/icon-menu.svg" alt="icon menu" />
       </div>
     </header>
-    <div class="px-8 grid grid-cols-1">
-      <!-- FIRST IMAGE -->
-      <div
-        class="bg-[url(/images/image-web-3-mobile.jpg)] bg-cover bg-top w-full h-96 mb-12"
-      ></div>
-      <!-- DESCRIPTION -->
-      <main class="mb-20">
-        <h2 class="text-5xl mb-6 tracking-tight">
-          The Bright Future of Web 3.0?
-        </h2>
-        <div>
-          <p class="text-slate-500 text-base/8 font-normal mb-6">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button
-            class="bg-[#f15d51] uppercase px-9 py-4 tracking-widest cursor-pointer hover:bg-slate-950 hover:text-white transition-all duration-300 active:bg-slate-800 active:text-white"
-          >
-            Read more
-          </button>
-        </div>
-      </main>
+
+    <!-- CONTENT -->
+    <div
+      class="mx-auto max-w-7xl px-8 grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-[2fr_1fr]"
+    >
+      <div class="grid grid-cols-1 md:gap-5 md:grid-rows-[1fr_auto]">
+        <!-- FIRST IMAGE -->
+        <div
+          class="bg-[url(/images/image-web-3-mobile.jpg)] bg-cover bg-top w-full h-96 mb-12 md:h-full md:mb-0 lg:bg-[url(/images/image-web-3-desktop.jpg)]"
+        ></div>
+        <!-- DESCRIPTION -->
+        <main class="mb-20 grid sm:grid-cols-2 sm:gap-6 md:mb-0 md:self-end">
+          <h2 class="text-5xl mb-6 tracking-tight">
+            The Bright Future of Web 3.0?
+          </h2>
+          <div>
+            <p class="text-slate-500 text-base/8 font-normal mb-6">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="bg-[#f15d51] uppercase px-9 py-4 tracking-widest cursor-pointer hover:bg-slate-950 hover:text-white transition-all duration-300 active:bg-slate-800 active:text-white md:px-5 lg:px-9"
+            >
+              Read more
+            </button>
+          </div>
+        </main>
+      </div>
 
       <!-- LIST OF NEWS -->
-      <aside class="text-white bg-slate-950 p-6 mb-20">
+      <aside
+        class="text-white bg-slate-950 p-6 mb-20 md:col-start-2 md:row-start-1 md:row-end md:mb-0"
+      >
         <h2 class="text-yellow-400 text-5xl mb-6">New</h2>
         <article class="mb-8 border-b border-gray-400">
           <a href="#" class="hover:text-yellow-400 transition-all duration-300">
             <h3 class="text-2xl">Hydrogen VS Electric Cars</h3>
           </a>
-          <p class="font-lighter text-gray-400 mb-8">
+          <p class="font-light text-gray-400 mb-8">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
         </article>
@@ -73,8 +83,8 @@
       </aside>
 
       <!-- ARTICLES -->
-      <section class="mb-20">
-        <ol>
+      <section class="mb-20 md:col-span-full">
+        <ol class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-3">
           <!-- ARTICLE 1 -->
           <li class="mb-10">
             <article class="grid grid-cols-[10rem_1fr] gap-6">
